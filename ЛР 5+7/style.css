@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+}
+
+#columnPageBlocks {
+    display: flex;
+    flex-direction: column;
+}
+
+#rowBlocks1 {
+    display: flex;
+    height: 400px;
+}
+
+#rowBlocks2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#rowBlocks3 {
+    display: flex;
+}
+
+#columnBlocks1, #columnBlocks2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.BlocksInRowBlocks2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 500px;
+}
+
+#columnBlocks5 {
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+
+#rowBlocks4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#blockColumnBlocks5 {
+    width: 40%;
+    height: 64px;
+    border: 1px solid black;
+}
+
+.blockInRowBlock {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#header {
+    border: 1px solid black;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    padding-right: 1.8%;
+}
+
+.blocks {
+    width: 8%;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#bigSquareBlock {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blockInBigSquareBlock {
+    border: 1px solid black;
+    width: 50%;
+    height: 50px;
+}
+
+#block1, #block2, #block3, #block4 {
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+}
+
+.blocksInBlocksInRowBlocks2 {
+    border: 1px solid black;
+    width: 100%;
+    height: 30%;
+}
+
+#block9 {
+    border: 1px solid black;
+    width: 60%;
+    height: 200px;
+}
+
+#block10 {
+    border: 1px solid black;
+    width: 40%;
+    height: 200px;
+}
+
+@media (max-width: 1024px) {
+
+    #columnBlocks1, #columnBlocks2 {
+        width: 50%;
+        height: 100%;
+    }
+
+    .blockInRowBlock {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    #blockColumnBlocks5 {
+        width: 60%;
+        height: 50px;
+    }
+
+    #bigSquareBlock {
+        width: 100%;
+        row-gap: 10px;
+        padding: 10px 0px;
+    }
+
+    .blockInBigSquareBlock {
+        width: 80%;
+    }
+
+    .BlocksInRowBlocks2 {
+        width: 60%;
+    }
+
+    #block9, #block10 {
+        width: 100%;
+        height: 100px;
+    }
+
+    #rowBlocks4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 20px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+    }
+
+    .blocks {
+        width: 20%;
+        height: 40px;
+    }
+
+    .BlocksInRowBlocks2 {
+        width: 70%;
+    }
+
+    .blockInBigSquareBlock {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blocks {
+        width: 100%;
+        height: 30px;
+    }
+
+    #bigSquareBlock {
+        width: 100%;
+    }
+
+    .blockInBigSquareBlock {
+        width: 100%;
+    }
+
+    .blockInRowBlock {
+        width: 100%;
+    }
+
+    #block1, #block2, #block3, #block4 {
+        height: auto;
+    }
+
+    #block9, #block10 {
+        width: 100%;
+        height: auto;
+    }
+
+    #rowBlocks2 {
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+}

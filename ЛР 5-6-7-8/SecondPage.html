@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="SecondPageStyle.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="Product1.jpg" alt="Product Image" id="main-image">
+            <div class="thumbnail-images">
+                <img src="Product1.jpg" alt="Thumbnail 1">
+                <img src="Product2.jpg" alt="Thumbnail 2">
+                <img src="Product3.jpg" alt="Thumbnail 3">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>HONEY</h1>
+            <p class="description">Элегантное и очень удобное платье. Модель будет удачно гармонировать с различными элементами гардероба. Платье отлично послужит вам не только в первое время беременности, но и в послеродовой период.</p>
+            <div class="RowContainer1">
+				<div class="price">Цена: <span>2340 р.</span></div>
+            <div class="quantity">
+                Кол-во:
+                <button class="quantity-btn" id="decrease">-</button>
+                <input type="number" value="1" min="1" id="quantity-input">
+                <button class="quantity-btn" id="increase">+</button>
+            </div>
+			</div>
+            <div class="RowContainer2">
+				<div class="size">
+					<label for="size">Размер:</label>
+					<select id="size">
+						<option value="XS">XS</option>
+						<option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+					</select>
+				</div>
+				<div class="color">
+					<label for="color">Цвет:</label>
+					<div class="color-options">
+						<div class="color-option" id="green"></div>
+						<div class="color-option" id="orange"></div>
+						<div class="color-option" id="blue"></div>
+					</div>
+				</div>
+			</div>
+            <button class="add-to-cart">В КОРЗИНУ</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Оформление заказа</h1>
+        <div class="breadcrumbs">
+            <a href="#">Главная</a> > <a href="#">Корзина</a> > Оформление заказа
+        </div>
+        <div class="order-form">
+            <div id="RowContainer2">
+                <div id="OrangeBlock"></div>
+                <p>Заполните простую форму и наши менеджеры свяжутся с вами, ответят на любые вопросы и подготовят счет на оплату</p>
+            </div>
+            <form>
+                <label for="name">Ваше имя: <input type="text" id="name" name="name"></label>
+                <label for="phone">Телефон: <span>*</span><input type="tel" id="phone" name="phone" required></label>
+                <label for="company">Название компании: <input type="text" id="company" name="company"></label>
+                <label for="email">E-mail: <input type="email" id="email" name="email"></label>
+                <label for="address">Адрес доставки: <input type="text" id="address" name="address"></label>
+                <label for="comments">Комментарий к заказу: <textarea id="comments" name="comments"></textarea></label>
+                <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+        </div>
+        <div class="order-summary">
+            <div class="RowContainer1">
+                <h2>Ваш заказ</h2>
+                <p id="TextChange">изменить</p>
+            </div>
+            <hr>
+            <div id="ColumnContainer1">
+                <span id="ItemText">Полуструктурный "горизонтальная линия"</span>
+                <div class="order-item">
+                    <span>от 3 490 р. x 1</span>
+                    <span>3 490</span>
+                </div>
+            </div>
+            <hr>
+            <div class="order-total">
+                <span>Итого:</span>
+                <span>3 490</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
